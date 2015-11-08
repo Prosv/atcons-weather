@@ -1,0 +1,222 @@
+
+@font-face {
+    font-family: 'plaintext';
+    src: url("../fonts/var/AlegreyaSans-Regular.otf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'plaintext';
+    src: url("../fonts/var/AlegreyaSans-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'plaintext';
+    src: url("../fonts/var/AlegreyaSans-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: plaintext;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+    color: #832Faa;
+}
+
+a.disabled {
+    /*pointer-events: none;*/
+    cursor: default;
+    transition: none;
+    color: #000000;
+}
+
+a.disabled:hover {
+    text-decoration: none;
+    text-shadow: 0 0 0;
+}
+
+a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 2px #BBBBBB;
+}
+
+tr {
+    height: 30px;
+}
+
+#big-header-text {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#text-under-big-header {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.btn-outline{
+    color:#832Faa;
+    background-color:transparent;
+    border-color:#832Faa;
+    padding: 10px;
+}
+
+.btn-outline:hover,.btn-outline:focus,.btn-outline:active{
+    color:#fff;
+    background-color:#832Faa;
+    border-color:#832Faa
+}
+
+#main-page-content {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main-page-button-block {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 40px;
+}
+
+#header {
+    margin: 10px 10px 0 19px;
+}
+
+.main-page-button {
+    font-size: 38px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 7px;
+    width: 100%;
+}
+
+#footer-info {
+    position: inherit;
+    bottom: 5px;
+    right: 25px;
+    color: #fff;
+}
+
+#footer-div {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ccc;
+    border-top: 3px solid #888;
+}
+
+#datasource-table {
+    float: right;
+    width: 85%;
+    padding-right: 15px;
+}
+
+#datasource-actions {
+    float: left;
+    width: 15%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    text-align: center;
+    height: 510px;
+}
+
+#datasource-buttons {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.btn {
+    border-radius:                    0;
+    -webkit-border-radius:            0;
+    -moz-border-radius:               0;
+}
+
+.action-button {
+    right: 0px;
+    left: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 35px;
+    width: 100%;
+}
+
+
+#data1-table {
+    float: right;
+    width: 85%;
+    padding-right: 15px;
+}
+
+#data-actions {
+    float: left;
+    width: 15%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    text-align: center;
+    height: 510px;
+}
+
+#data-buttons {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.modal-open {
+    padding-right: 0 !important;
+}
+
+#data-ds-link-div {
+    height: 50%;
+    margin-top: 50%;
+    opacity: 0.3;
+    margin-right: 10%;
+}
+
+#data-ds-link {
+    border: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+#data-ds-link:hover {
+    color: #ffffff;
+}
+
+
+#ds-data-link-div {
+    height: 50%;
+    margin-top: 50%;
+    opacity: 0.3;
+    margin-right: 10%;
+}
+
+#ds-data-link {
+    border: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+#ds-data-link:hover {
+    color: #ffffff;
+}
+
+#viewdata-modal-body {
+    height: 300px;
+    overflow-y: scroll;
+}
