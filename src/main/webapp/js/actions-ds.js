@@ -1,5 +1,5 @@
 function addNewDataSource() {
-    var source_url = document.getElementById("url-input").value;
+    var source_url = $("#url-input").value;
     var source_type = $("input[name=optradio]:checked").val();
 
     RegExp.url = '(?:https?://)?(?:[\\-\\w]+:[\\-\\w]+@)?(?:[0-9a-z][\\-0-9a-z]*[0-9a-z]\\.)+[a-z]{2,6}(?::\\d{1,5})?(?:[?/\\\\#][?!^$.(){}:|=[\\]+\\-/\\\\*;&~#@,%\\wА-Яа-я]*)?';
