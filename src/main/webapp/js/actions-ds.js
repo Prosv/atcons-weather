@@ -22,13 +22,13 @@ function addNewDataSource() {
 }
 
 function constructBodyForRemoveModal() {
-    var removebody = document.getElementById("remove-modal-body");
+    var removebody = $("#remove-modal-body");
     var removeSize = $('#ds-tbody').find('input[type="checkbox"]:checked').size();
     if (removeSize == 0) {
-        removebody.innerHTML = "You have not chosen any data sources for remove";
+        removebody.html("You have not chosen any data sources for remove");
         $('#btn-ds-rmv-modal').prop('disabled', true);
     } else {
-        removebody.innerHTML = "Are you sure you want to remove " + removeSize + " data sources?"
+        removebody.html("Are you sure you want to remove " + removeSize + " data sources?");
         $('#btn-ds-rmv-modal').prop('disabled', false);
     }
 }
