@@ -22,6 +22,7 @@ function addNewDataSource() {
 }
 
 function constructBodyForRemoveModal() {
+	console.log("asdfg");
     var removebody = document.getElementById("remove-modal-body");
     var removeSize = $('#ds-tbody').find('input[type="checkbox"]:checked').size();
     if (removeSize == 0) {
